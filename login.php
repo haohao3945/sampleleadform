@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($username === $valid_username && $password === $valid_password) {
         $_SESSION['loggedin'] = true;
-        header("Location: view_leads.php");
+        header("Location: viewlead.php");
         exit();
     } else {
         echo "Invalid credentials.";
