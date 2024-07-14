@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+
+<section id="gallery" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Past Projects</h2>
+        <p class="text-center" style="margin-bottom:30px;">Over the past 7 years, we have helped over 50 clients, including shop lot owners, homeowners, charity organizations, and commercial property managers, in maintaining and enhancing their properties.</p>
+        
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs justify-content-center" id="galleryTabs" role="tablist">
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_1-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_1" aria-selected="false" onclick="loadImages(0); return false;">Building Assessment</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_2-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_2" aria-selected="false" onclick="loadImages(1); return false;">Building Extension</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_3-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_3" aria-selected="false" onclick="loadImages(2); return false;">Building Restoration Work</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_4-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_4" aria-selected="false" onclick="loadImages(3); return false;">Concrete Repair & Protection</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_5-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_5" aria-selected="false" onclick="loadImages(4); return false;">Fireproofing</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_6-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_6" aria-selected="false" onclick="loadImages(5); return false;">Roofing</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_7-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_7" aria-selected="false" onclick="loadImages(6); return false;">Structural Strengthening</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="color:black;" id="project_8-tab" data-toggle="tab" href="#" role="tab" aria-controls="project_8" aria-selected="false" onclick="loadImages(7); return false;">Waterproofing</a>
+            </li>
+
+        </ul> <!-- End of nav-tabs -->
+        
+        <!-- Tab Content -->
+        <div class="tab-content mt-4" id="galleryTabContent">
+
+            <div class="tab-pane fade" id="project_1" role="tabpanel" aria-labelledby="project_1-tab">
+                <!-- Gallery Grid for Building Assessment -->
+                <div class="row" id="project_0_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_2" role="tabpanel" aria-labelledby="project_2-tab">
+                <!-- Gallery Grid for Building Extension -->
+                <div class="row" id="project_1_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_3" role="tabpanel" aria-labelledby="project_3-tab">
+                <!-- Gallery Grid for Building Restoration Work -->
+                <div class="row" id="project_2_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_4" role="tabpanel" aria-labelledby="project_4-tab">
+                <!-- Gallery Grid for Concrete Repair & Protection -->
+                <div class="row" id="project_3_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_5" role="tabpanel" aria-labelledby="project_5-tab">
+                <!-- Gallery Grid for Fireproofing -->
+                <div class="row" id="project_4_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_6" role="tabpanel" aria-labelledby="project_6-tab">
+                <!-- Gallery Grid for Roofing -->
+                <div class="row" id="project_5_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_7" role="tabpanel" aria-labelledby="project_7-tab">
+                <!-- Gallery Grid for Structural Strengthening -->
+                <div class="row" id="project_6_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+            <div class="tab-pane fade" id="project_8" role="tabpanel" aria-labelledby="project_8-tab">
+                <!-- Gallery Grid for Waterproofing -->
+                <div class="row" id="project_7_images">
+                    <!-- Images will be dynamically loaded here -->
+                </div>
+            </div> <!-- End of tab-pane -->
+
+        </div> <!-- End of tab-content -->
+    </div> <!-- End of container -->
+</section> <!-- End of gallery section -->
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-61v5rOwDJkkv29Ojg3tNrP4xNmvwytF65+XPH0WwSluA5ggzxFX7RC1wDzU4Ey8/" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+oLr5FOkMyv/R/wI1N+gRXg06T5JqyQfG+J" crossorigin="anonymous"></script>
+
+<script>
+    // Activate Bootstrap tab functionality
+    $(document).ready(function(){
+        $('#galleryTabs a').on('click', function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+
+    // Function to load images dynamically
+    function loadImages(index) {
+        var projectImages = document.getElementById('project_' + (index + 1) + '_images');
+        var imagesHTML = '';
+
+        // Replace with actual JSON data
+        var imageData = [{"project_name": "Building Assessment", "images": ["gallery/Building Assessment/IMG_0295.webp", "gallery/Building Assessment/IMG_0309.webp", "gallery/Building Assessment/IMG_2593.webp", "gallery/Building Assessment/IMG_3737.webp", "gallery/Building Assessment/IMG_4552.webp", "gallery/Building Assessment/IMG_8879.webp"]}, {"project_name": "Building Extension", "images": ["gallery/Building Extension/IMG_0584.webp", "gallery/Building Extension/IMG_0604.webp", "gallery/Building Extension/IMG_1311.webp", "gallery/Building Extension/IMG_5683.webp", "gallery/Building Extension/IMG_6230.webp", "gallery/Building Extension/IMG_7549.webp"]}, {"project_name": "Building Restoration Work", "images": ["gallery/Building Restoration Work/2024_05_07_08_46_IMG_1887.webp", "gallery/Building Restoration Work/IMG_0923.webp", "gallery/Building Restoration Work/IMG_1555.webp", "gallery/Building Restoration Work/IMG_1558.webp", "gallery/Building Restoration Work/IMG_4192.webp", "gallery/Building Restoration Work/photo_5_2024-06-11_09-39-02.webp"]}, {"project_name": "Concrete Repair & Protection", "images": ["gallery/Concrete Repair & Protection/IMG-20240611-WA0044.webp", "gallery/Concrete Repair & Protection/IMG-20240611-WA0047.webp", "gallery/Concrete Repair & Protection/IMG-20240611-WA0051.webp", "gallery/Concrete Repair & Protection/IMG-20240611-WA0069.webp", "gallery/Concrete Repair & Protection/IMG_0495.webp", "gallery/Concrete Repair & Protection/IMG_9672.webp"]}, {"project_name": "Fireproofing", "images": ["gallery/Fireproofing/photo_2023-03-16_13-17-38.webp", "gallery/Fireproofing/photo_24_2024-06-11_10-11-21.webp", "gallery/Fireproofing/photo_7_2024-06-11_10-11-21.webp", "gallery/Fireproofing/WhatsApp Image 2023-03-16 at 09.40.45.webp"]}, {"project_name": "Roofing", "images": ["gallery/Roofing/IMG_1182.webp", "gallery/Roofing/IMG_2807.webp", "gallery/Roofing/IMG_2812.webp", "gallery/Roofing/IMG_5749.webp", "gallery/Roofing/photo_37_2024-06-11_10-13-32.webp", "gallery/Roofing/photo_47_2024-06-11_10-13-32.webp"]}, {"project_name": "Structural Strengthening", "images": ["gallery/Structural Strengthening/2024_02_07_08_21_IMG_9571.webp", "gallery/Structural Strengthening/2024_02_07_08_26_IMG_9581.webp", "gallery/Structural Strengthening/2024_02_08_08_56_IMG_9680.webp", "gallery/Structural Strengthening/IMG_7843.webp", "gallery/Structural Strengthening/IMG_9136.webp", "gallery/Structural Strengthening/photo_32_2023-12-01_11-12-55.webp"]}, {"project_name": "Waterproofing", "images": ["gallery/Waterproofing/IMG_0407.webp", "gallery/Waterproofing/IMG_3533.webp", "gallery/Waterproofing/IMG_4126.webp", "gallery/Waterproofing/IMG_4843.webp", "gallery/Waterproofing/IMG_4902.webp", "gallery/Waterproofing/IMG_7351.webp"]}];
+        
+        for (var i = 0; i < imageData[index]['images'].length; i++) {
+            imagesHTML += '<div class="col-md-4 mb-4">';
+            imagesHTML += '<img src="' + imageData[index]['images'][i] + '" alt="' + imageData[index]['project_name'] + '" class="img-fluid">';
+            imagesHTML += '</div>';
+        }
+
+        projectImages.innerHTML = imagesHTML;
+    }
+</script>
+
+</body>
+</html>

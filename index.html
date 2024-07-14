@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your website description here">
-    <title>Your Website Title</title>
+    <title>C&CT Consult</title>
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -21,20 +19,18 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
-
+   
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@YourTwitterHandle">
-    <meta name="twitter:title" content="Your Website Title">
+    <meta name="twitter:site" content="@C&CTConsult">
+    <meta name="twitter:title" content="C&CT Consult">
     <meta name="twitter:description" content="Your website description here">
     <meta name="twitter:image" content="https://example.com/image.jpg">
 
     <!-- Facebook Open Graph -->
     <meta property="og:url" content="https://example.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Your Website Title">
+    <meta property="og:title" content="C&CT Consult">
     <meta property="og:description" content="Your website description here">
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:image:alt" content="Alt text for the image">
@@ -192,9 +188,12 @@
 			background-color: #007bff; /* Active navigation item background color */
 			color: #fff; /* Active navigation item text color */
 		}
+		
+		.row {
+			margin-bottom:10px;
+		}
 	}
-	
-	
+
 	
 	.hero-banner {
 		position: relative;
@@ -262,6 +261,12 @@
 		background-color:#f4f4f4;
 	}
 	
+	.card-text{
+		font-size:14px;
+	}
+	
+	
+	
 	/* Parallax effect */
 	@media (min-width: 768px) {
 		.hero-banner {
@@ -296,8 +301,22 @@
 		body > nav > div > button
     }
 	
+	button{
+		background-color:#343a40!important;
 	
-
+	}
+	
+	button:hover{
+		background-color:gray !important;
+	
+	}
+	
+	
+	@media (min-width:768px) and (max-width:991px){
+		.hero-content{
+			width:80% !important;
+		}
+	}
 	</style>
 </head>
 <body>
@@ -306,7 +325,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<!-- Company Name or Logo -->
-			<a class="navbar-brand" href="#">Your Company</a>
+			<a class="navbar-brand" href="#" style="display:flex;"><img src="logo.webp" width="130px" alt="cctc"></a>
 			
 			
 			
@@ -357,10 +376,10 @@
 					<!-- Card 1 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image1.jpg" class="card-img-top" alt="Image 1">
+							<img src="descriptionphoto/buildingaccessment.webp" class="card-img-top" alt="Image 1">
 							<div class="card-body">
-								<h5 class="card-title">BUILDING ASSESSMENT</h5>
-								<p class="card-text">By enrolling in our Building Assessment service, you'll empower your business with comprehensive property insights to make informed decisions and strategically plan for future maintenance, saving time and resources.</p>
+								<h6 class="card-title text-center">Building Assessment</h6>
+								<p class="card-text text-center">By enrolling in our Building Assessment service, you'll empower your business with comprehensive property insights to make informed decisions and strategically plan for future maintenance, saving time and resources.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -368,10 +387,10 @@
 					<!-- Card 2 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image2.jpg" class="card-img-top" alt="Image 2">
+							<img src="descriptionphoto/buildingextension.webp" class="card-img-top" alt="Image 2">
 							<div class="card-body">
-								<h5 class="card-title">BUILDING EXTENSION</h5>
-								<p class="card-text">Enroll today to transform your property with our comprehensive building extension services, enhancing both functionality and safety for your property.</p>
+								<h6 class="card-title text-center">Building Extension</h6>
+								<p class="card-text text-center">Our building extensions service catering to properties owner looking to upgrade their properties. We've successfully extended buildings with additional spaces, ensuring quality and meeting diverse client needs.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -379,10 +398,10 @@
 					<!-- Card 3 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image3.jpg" class="card-img-top" alt="Image 3">
+							<img src="descriptionphoto/concreterepair.webp" class="card-img-top" alt="Image 3">
 							<div class="card-body">
-								<h5 class="card-title">CONCRETE REPAIR & PROTECTION</h5>
-								<p class="card-text">reinforce your concrete structures, ensuring prolonged integrity and resilience against common defects. Make sure your buildings stand strong, unaffected by cracks or spalling.</p>
+								<h6 class="card-title text-center">Concrete Repair & Protection</h6>
+								<p class="card-text text-center ">Our concrete repair and protection service focuses on addressing cracks and erosion to extend structural lifespan with high-quality materials and protective coatings, to ensure building lifespan of building.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -393,10 +412,10 @@
 					<!-- Card 1 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image1.jpg" class="card-img-top" alt="Image 1">
+							<img src="descriptionphoto/fireproofing.webp" class="card-img-top" alt="Image 1">
 							<div class="card-body">
-								<h5 class="card-title">FIREPROOFING</h5>
-								<p class="card-text">Enrolling in our fireproofing service ensures compliance with building codes and safeguards structural integrity against fire hazards.</p>
+								<h6 class="card-title text-center ">Fireproofing</h6>
+								<p class="card-text text-center">Our fireproofing service ensures your building meets fire safety regulations, protecting structural integrity and occupants from fire hazards with thorough compliance and expert application.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -404,10 +423,10 @@
 					<!-- Card 2 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image2.jpg" class="card-img-top" alt="Image 2">
+							<img src="descriptionphoto/buildingrestoration.webp" class="card-img-top" alt="Image 2">
 							<div class="card-body">
-								<h5 class="card-title">BUILDING RESTORATION WORK</h5>
-								<p class="card-text">Master preservation, rehabilitation, restoration, and reconstruction techniques to transform historic buildings, blending authenticity with modern methods to safeguard their timeless beauty.</p>
+								<h6 class="card-title text-center">Building Restoration Work</h6>
+								<p class="card-text text-center">Preservation, rehabilitation, restoration, and reconstruction, we revitalize historic buildings using authentic methods blended with modern techniques to maintain their timeless beauty.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -415,24 +434,24 @@
 					<!-- Card 3 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image3.jpg" class="card-img-top" alt="Image 3">
+							<img src="descriptionphoto/roofing.webp" class="card-img-top" alt="Image 3">
 							<div class="card-body">
-								<h5 class="card-title">ROOFING</h5>
-								<p class="card-text">Shield your home from animals, rain, heat, wind, and sunlight with our expert roofing services.</p>
+								<h6 class="card-title text-center">Roofing</h6>
+								<p class="card-text text-center">Protect your home from animals, rain, heat, wind, and sunlight with our precision roofing services. We install robust roofing systems that enhance property resilience and aesthetic appeal.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" style="">
 				
 					<!-- Card 1 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image1.jpg" class="card-img-top" alt="Image 1">
+							<img src="descriptionphoto/structurestrengthening.webp" class="card-img-top" alt="Image 1">
 							<div class="card-body">
-								<h5 class="card-title">STRUCTURAL STRENGTHENING</h5>
-								<p class="card-text">Ensure your building's safety and resilience with expert structural strengthening to meet higher load demands and updated code requirements. Our methods, including span shortening and external composites, will keep your structure secure.</p>
+								<h6 class="card-title text-center">Structure Strengthening</h6>
+								<p class="card-text text-center">Ensure building's safety and resilience with expert structural strengthening to meet higher load demands and updated code requirements. Our methods, including span shortening and external composites, will keep your structure secure.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -440,10 +459,10 @@
 					<!-- Card 2 -->
 					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
-							<img src="image2.jpg" class="card-img-top" alt="Image 2">
+							<img src="descriptionphoto/waterproofing.webp" class="card-img-top" alt="Image 2">
 							<div class="card-body">
-								<h5 class="card-title">WATERPROOFING</h5>
-								<p class="card-text">Ensure your basement stays dry and your roof withstands any weather with our easy-to-apply cementitious waterproofing and advanced acrylic membrane systems, providing seamless protection for every part of your building.</p>
+								<h6 class="card-title text-center">Waterproofing</h6>
+								<p class="card-text text-center">Ensure your basement stays dry and your roof withstands any weather with our easy-to-apply cementitious waterproofing and advanced acrylic membrane systems, providing seamless protection for every part of your building.</p>
 								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
@@ -451,84 +470,196 @@
 					
 				</div>
 			</div>
+			<a  href="#contactus" style="width: 300px;display: block;margin-left: auto;margin-right: auto;height: 70px;margin-bottom:40px;"><button style="margin-top:20px; height:100%;" class="btn btn-block" >Enroll Now</button></a>
 			
-
-			</div>
 		</div>
+	
 	</section>
 		<!--Gallery Section -->
 	<section id="gallery" class="py-5">
 		<div class="container">
 			<h2 class="text-center mb-4">Past Projects</h2>
-			<p class="text-center"  style="margin-bottom:30px;">Over past 7 years, we have helped over 50 clients, including shop lot owners, homeowners, charity organizations, and commercial property managers, in maintaining and enhancing their properties.</p>
+			<p class="text-center" style="margin-bottom:50px;">Over the past 7 years, we have helped over 50 clients, including shop lot owners, homeowners, charity organizations, and commercial property managers, in maintaining and enhancing their properties.</p>
 			
-			<!-- Tab Navigation -->
-			<ul class="nav nav-tabs justify-content-center" id="galleryTabs" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" style="color:black;" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" style="color:black;" id="year2023-tab" data-toggle="tab" href="#year2023" role="tab" aria-controls="year2023" aria-selected="false">Project 1</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" style="color:black;" id="year2022-tab" data-toggle="tab" href="#year2022" role="tab" aria-controls="year2022" aria-selected="false">Project 2</a>
-				</li>
+			<!-- Custom Tab Navigation -->
+			<ul class="custom-tabs justify-content-center" id="galleryTabs" role="tablist">
+				<!-- JavaScript will populate these tabs dynamically -->
 			</ul>
 			
 			<!-- Tab Content -->
 			<div class="tab-content mt-4" id="galleryTabContent">
-				<div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-					<!-- Gallery Grid: 3x2 -->
-					<div class="row">
-						<!-- Gallery Images -->
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery1.jpg" alt="Gallery Image 1" class="img-fluid">
-						</div>
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery2.jpg" alt="Gallery Image 2" class="img-fluid">
-						</div>
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery3.jpg" alt="Gallery Image 3" class="img-fluid">
-						</div>
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery4.jpg" alt="Gallery Image 4" class="img-fluid">
-						</div>
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery5.jpg" alt="Gallery Image 5" class="img-fluid">
-						</div>
-						<div class="col-md-4 mb-4">
-							<img src="img/gallery6.jpg" alt="Gallery Image 6" class="img-fluid">
-						</div>
+				<!-- JavaScript will populate these tab panes dynamically -->
+				<div class="row" style="width:100%;">
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 1 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 1" id="image1">
 					</div>
-					
-					<!-- Pagination -->
-					<nav aria-label="Gallery Pagination" class="mt-5">
-						<ul class="pagination justify-content-center">
-							<li class="page-item disabled">
-								<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-							</li>
-							<li class="page-item"><a class="page-link" href="#">1</a></li>
-							<li class="page-item"><a class="page-link" href="#">2</a></li>
-							<li class="page-item">
-								<a class="page-link" href="#">Next</a>
-							</li>
-						</ul>
-					</nav>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 2 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 2" id="image2">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 3 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 3" id="image3">
+					</div>
 				</div>
-				
-				<!-- Additional Tab Panes for Different Years -->
-				<div class="tab-pane fade" id="year2023" role="tabpanel" aria-labelledby="year2023-tab">
-					<!-- Gallery Grid for 2023: 3x2 -->
-					<!-- Include similar HTML structure as above -->
-				</div>
-				
-				<div class="tab-pane fade" id="year2022" role="tabpanel" aria-labelledby="year2022-tab">
-					<!-- Gallery Grid for 2022: 3x2 -->
-					<!-- Include similar HTML structure as above -->
+				<div class="row" style="width:100%;">
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 4 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 4" id="image4">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 5 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 5" id="image5">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 6 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 6" id="image6">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- JavaScript for Dynamic Content Loading -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script>
+		// Function to fetch gallery data
+		function fetchGalleryData() {
+			return fetch('gallery_data.json') // Replace with your actual JSON endpoint
+				.then(response => response.json())
+				.catch(error => {
+					console.error('Error fetching gallery data:', error);
+					return []; // Return empty array in case of error
+				});
+		}
+
+		// Function to create custom tab navigation based on fetched data
+		function createCustomTabs(data) {
+			const customTabs = document.getElementById('galleryTabs');
+			customTabs.innerHTML = ''; // Clear existing tab navigation
+
+			data.forEach((project, index) => {
+				// Create tab navigation item
+				const tabId = `project_${project.project_name}`;
+				const tabLink = document.createElement('a');
+				tabLink.classList.add('custom-tab-link');
+				tabLink.textContent = project.project_name;
+				tabLink.href = `#${tabId}`;
+				tabLink.addEventListener('click', (event) => {
+					event.preventDefault();
+					loadProjectImages(project.project_name);
+
+					// Remove active class from all tabs
+					const allTabs = customTabs.querySelectorAll('.custom-tab-link');
+					allTabs.forEach(tab => tab.classList.remove('active'));
+
+					// Add active class to the clicked tab
+					tabLink.classList.add('active');
+				});
+
+				const listItem = document.createElement('li');
+				listItem.classList.add('custom-tab-item');
+				listItem.appendChild(tabLink);
+
+				customTabs.appendChild(listItem);
+			});
+		}
+
+		// Function to load images for a project into the corresponding tab content
+		function loadProjectImages(projectName) {
+			fetchGalleryData()
+				.then(data => {
+					const project = data.find(project => project.project_name === projectName);
+					const galleryTabContent = document.getElementById('galleryTabContent');
+
+					if (project) {
+						// Select all placeholder images
+						const placeholderImages = galleryTabContent.querySelectorAll('img[id^="image"]');
+						
+						// Hide all placeholder images initially
+						placeholderImages.forEach(imgElement => {
+							imgElement.style.display = "none";
+						});
+
+						// Update placeholder images with actual project images
+						project.images.slice(0, 6).forEach((image, index) => {
+							const imgElement = placeholderImages[index];
+							if (imgElement) {
+								// Fade in the image with animation
+								imgElement.style.display = "block";
+								imgElement.src = image.path;
+								imgElement.alt = image.filename;
+								imgElement.style.opacity = 0; // Start with opacity 0
+
+								// Apply fade-in animation
+								setTimeout(() => {
+									imgElement.style.transition = 'opacity 0.5s ease-in-out';
+									imgElement.style.opacity = 1;
+								}, 50 * index); // Delay each image transition for a staggered effect
+							}
+						});
+					}
+				})
+				.catch(error => console.error('Error loading project images:', error));
+		}
+
+		// Function to initialize the gallery
+		function initializeGallery() {
+			fetchGalleryData()
+				.then(data => {
+					createCustomTabs(data);
+
+					// Optionally load images for the first project initially
+					if (data.length > 0) {
+						loadProjectImages(data[0].project_name);
+					}
+				})
+				.catch(error => console.error('Error initializing gallery:', error));
+		}
+
+		// Call the function to initialize the gallery on page load
+		initializeGallery();
+	</script>
+
+	<!-- CSS for Custom Tabs Styling -->
+	<style>
+		.custom-tabs {
+			list-style-type: none;
+			padding: 0;
+			text-align: center;
+		}
+
+		.custom-tab-item {
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+
+		.custom-tab-link {
+			border-radius:5px;
+			padding: 10px 20px;
+			background-color: #f8f9fa; /* Gray background */
+			color: #343a40; /* Dark text */
+			text-decoration: none;
+			border: 1px solid #ddd; /* Gray border */
+			margin-right: 4px;
+			transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+		}
+
+		.custom-tab-link.active {
+			background-color: #343a40; /* Dark background when selected */
+			color: #fff; /* White text when selected */
+			border-color: #343a40; /* Dark border when selected */
+		}
+
+		.custom-tab-link:hover {
+			background-color: #343a40; /* Dark background on hover */
+			color: #fff; /* White text on hover */
+			border-color: #343a40; /* Dark border on hover */
+		}
+	</style>
+
 
 	<!--banner section-->
 	<section id="contactus" class="hero-banner py-5" style="height:400px">
@@ -561,7 +692,8 @@
 							<label for="phone">Phone:</label>
 							<input name="phone" type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
 						</div>
-						<button type="submit" class="btn btn-primary btn-block">Submit</button>
+
+						<button type="submit" style="margin-top:20px;height:70px;" class="btn btn-block">Submit</button>
 					</form>
 				</div>
 			</div>
@@ -575,8 +707,9 @@
 			<div class="row">
 				<!-- First Column: Company Introduction -->
 				<div class="col-md-12 mb-12">
+				
 					<h5>About Us</h5>
-					<p>With a commitment to durability and safety, we provide comprehensive property insights and structural enhancements for lasting integrity and compliance.</p>
+					<p>C&CT Consult is a construction company with a commitment to durability and safety, we provide comprehensive property insights and structural enhancements for lasting integrity and compliance.</p>
 				</div>
 				
 				<!-- Second Column: Services Links >
