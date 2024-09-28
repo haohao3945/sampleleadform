@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your website description here">
-    <title>C&CT Consult</title>
-    
+    <!-- English SEO -->
+    <title>C&CT Consult - Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories</title>
+    <meta name="description" content="C&CT Consult provides structural integrity, fire safety, and electrical system inspection services for garment factories, ensuring safety compliance, extending building lifespan, and improving operational efficiency.">
+    <meta name="keywords" content="building safety, fire inspection, electrical safety, structural assessment, factory safety, CCTC">
+    <meta name="author" content="C&CT Consult">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="C&CT Consult -  Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories">
+    <meta property="og:description" content="We are dedicated to providing comprehensive building safety assessment services for garment factories, ensuring the safety of workers and property.">
+    <meta property="og:image" content="C&CTconsultcover.png">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="C&CT Consult Building Safety Inspection Company">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="C&CT Consult Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories">
+    <meta name="twitter:description" content="C&CT Consult provides structural, fire, and electrical safety inspections for garment factories.">
+    <meta name="twitter:image" content="C&CTconsultcover.png">
+    <meta name="twitter:site" content="@C&CTConsult">
+
+    <!-- Device Adaptation -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="article:author" content="C&CT Consult">
+    <meta property="article:publisher" content="https://facebook.com/cctc">
+    <meta property="article:published_time" content="2024-01-01T12:00:00Z">
+    <meta property="article:modified_time" content="2024-01-01T12:00:00Z">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
@@ -20,31 +53,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@C&CTConsult">
-    <meta name="twitter:title" content="C&CT Consult">
-    <meta name="twitter:description" content="Your website description here">
-    <meta name="twitter:image" content="https://example.com/image.jpg">
-
-    <!-- Facebook Open Graph -->
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="C&CT Consult">
-    <meta property="og:description" content="Your website description here">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:image:alt" content="Alt text for the image">
-
-    <!-- Schema.org markup for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "https://example.com",
-      "name": "Your Website Name",
-      "logo": "https://example.com/logo.png"
-    }
-    </script>
 	<style>
 	/* Navigation Styles */
 	.navbar {
@@ -257,7 +265,7 @@
 		background-color: #0056b3; /* Button background color on hover */
 	}
 	
-	#gallery{
+	#gallery,.bg-gray{
 		background-color:#f4f4f4;
 	}
 	
@@ -317,7 +325,41 @@
 			width:80% !important;
 		}
 	}
+	
+	@media (max-width: 400px) {
+		.ml-10-sm {
+			margin-left: 5%;
+		}
+	}
+	@media (min-width: 401px) and (max-width: 768px) {
+		.ml-10-sm {
+			margin-left: 13%;
+		}
+	}
 	</style>
+	<script>
+        // Function to send tracking request
+        function trackEvent(eventType, timeValue) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "track.php?event=" + eventType + "&t=" + timeValue, true);
+            xhttp.send();
+        }
+
+        // Track initial page view event
+        window.addEventListener('load', function() {
+            trackEvent('view', 0);
+        });
+
+        // Track 30-second view
+        setTimeout(function() {
+            trackEvent('30sec', 30);
+        }, 30000); // 30 seconds
+
+        // Track 60-second view
+        setTimeout(function() {
+            trackEvent('60sec', 60);
+        }, 60000); // 60 seconds
+    </script>
 </head>
 <body>
     <!-- Your HTML content goes here -->
@@ -338,7 +380,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#service">Services</a>
 					</li>
-					
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Past Projects</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#contactus">Contact Us</a>
 					</li>
@@ -356,221 +400,277 @@
 	<section id="contact" class="hero-banner py-5">
 		<div class="hero-content">
 			<h3 class=" text-white fade-up">We Specialize in One-Stop Factory Solutions</h3>
-			<p class="text-white fade-up">Whether you have an existing factory or are planning to establish one, we have one stop solution in optimizing safety, compliance, <br>and efficiency to protect your assets and ensure smooth operations.</p>
+			<p class="text-white fade-up">Whether you have an existing factory or are planning to establish one, we have one stop solution in optimizing safety, compliance, <br>and efficiency to protect your assets and ensure smooth operations.<br></p>
+			<p style="margin-top:-20px;"><span class="font-italic ">我们专注于一站式工厂解决方案。无论您是已有工厂还是计划建立新工厂，</span><br><span class="font-italic ">我们都提供优化安全、合规性和效率的一站式解决方案，以保护您的资产并确保顺畅运营。</span></p>
+			
 		</div>
 	</section>	
 
+	<!--Client Section -->
+	<section id="client" class="py-5 ">
+		<div class="container text-center">
+			<h2 style="margin-bottom:20px;">Our Client</h2>
+			<p class="text-center" style="margin-bottom:50px;">Over the past 10 years in Cambodia, we have established ourselves as leading consultants, conducting inspections for numerous factory managers to ensure safety and enhance factory properties.</p>
+			<p style="margin-top:-45px;margin-bottom:40px"><span class="font-italic ">
+在过去十年中，我们在柬埔寨建立了领先的咨询公司，专为工厂业主和品牌业主提供专业检查和建议，<br>以确保工厂安全、符合标准，防止损失和处罚，并增强客户与合作伙伴的信任。</p>
+
+			<div class="row justify-content-center">
+				<div class="col-12 col-md-12 col-lg-6 mb-4">
+					<div class="bg-white p-4 rounded shadow">
+						
+						<img src="illustration/factoryowner.jpg" width="80%" style="margin:20px 0;"/>
+						<h3 class="h5 font-weight-semibold">For Factory Owners</h3>
+						<p style="width:80%;margin:auto;margin-bottom:20px; font-size:14px;">We conduct inspections and offer professional advice to ensure the factory meets safety criteria, preventing losses and penalties from damages or violations, and enhancing trust in collaborations with others.</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 mb-4">
+					<div class="bg-white p-4 rounded shadow" >
+						
+						<img src="illustration/brandowner.jpg"  width="80%" style="margin:20px 0;"/>
+						<h3 class="h5 font-weight-semibold">For Brand Owners</h3>
+						<p style="width:80%;margin:auto; margin-bottom:20px;font-size:14px;">Looking to establish or partner with a factory in Cambodia? We ensure compliance and safety through thorough inspections, helping to ensure factory meet safety criteria and safe for long-term business.</p>
+					</div>
+				</div>
+			</div>
+			
+			<a  href="#contactus" style="width: 300px;display: block;margin-left: auto;margin-right: auto;height: 70px;margin-bottom:40px;"><button style="margin-top:20px; height:100%;" class="btn btn-block" >Enroll Now</button></a>
+			
+		</div>
+	</section>
+
+	<!-- Safety Assessment Wireframe -->
+	<section id="safety-assessment" class="py-5 bg-light">
+		<div class="container">
+			<div class="row" style="margin-top:20px">
+				<!-- Column for content with proper responsiveness for different screen sizes -->
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+					<!-- Text aligned left for larger screens, centered for smaller screens -->
+					<h1 class="text-xl-left text-lg-left text-md-left text-center" >
+						Common Safety Issues in Factories We Identify During Our Assessments
+					</h1>
+					<h1 class="font-italic text-xl-left text-lg-left text-md-left text-center" style="margin-bottom:40px;">常见工厂问题</h1>
+					<!-- Image remains full width regardless of screen size -->
+					<img src="illustration/commonissue.jpg" width="100%" style="padding-bottom:40px;"/>
+				</div>
+
+				<!-- Space column, hidden on smaller screens -->
+				<div class="col-xl-1 col-lg-1 col-md-1 d-none d-md-block d-lg-block"></div>
+
+				<!-- Column for safety issue details, responsive across screen sizes -->
+				<div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 mt-sm-3">
+					<!-- Structural Integrity Issues -->
+					<div>
+						<div class="ml-10-sm" style="padding-bottom:40px; border-radius: 8px;">
+							<div style="display: flex; align-items: center;">
+								<div style="width: 60px; height: 60px; border-radius: 50%; margin-right: 5px; margin-top:-145px;">
+									<!-- Structural Integrity Icon -->
+									<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M3.9999 14.9999V12.3312M9.33323 14.9999V12.3312M14.6666 14.9999V12.3312M19.9999 14.9999V12.3312M2.3999 18.3999H21.5999V21.5999H2.3999V18.3999ZM2.3999 8.7999V6.66657L11.6054 2.3999L21.5999 6.66657V8.7999Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+								<div>
+									<h5 style="margin-top: 10px;">Structural Integrity Issues <br><span class="font-italic">结构完整性问题</span></h5>
+									<p>1. Aging Infrastructure <span class="font-italic">基础设施老化</span></p>
+									<p>2. Design Flaws <span class="font-italic">设计缺陷</span></p>
+									<p>3. Environmental Damage <span class="font-italic">环境损害</span></p>
+									<p>4. Access Challenges <span class="font-italic">访问挑战<span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Fire Safety Violations -->
+					<div>
+						<div class="ml-10-sm" style="padding-bottom:40px; border-radius: 8px;">
+							<div style="display: flex; align-items: center;">
+								<div style="width: 60px; height: 60px; border-radius: 50%; margin-right: 5px; margin-top:-145px;">
+									<!-- Fire Safety Icon -->
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+										<path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+									</svg>
+								</div>
+								<div>
+									<h5 style="margin-top: 10px;">Fire Safety Violations <br> <span class="font-italic">消防安全违规</span></h5>
+									<p>1. Blocked Fire Exits <span class="font-italic">阻塞的消防出口</span></p>
+									<p>2. Faulty Fire Equipment <span class="font-italic">故障的消防设备</span></p>
+									<p>3. Combustible Materials <span class="font-italic">可燃材料</span></p>
+									<p>4. Outdated Fire Data <span class="font-italic">过时的消防数据</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Electrical Safety Hazards -->
+					<div>
+						<div class="ml-10-sm" style="padding-bottom:40px; border-radius: 8px;">
+							<div style="display: flex; align-items: center;">
+								<div style="width: 60px; height: 60px; border-radius: 50%; margin-right: 5px; margin-top:-145px;">
+									<!-- Electrical Safety Icon -->
+									<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.28905 13.6318L12.2782 2.64879C12.5468 2.22677 13.2 2.417 13.2 2.91722V10.7002C13.2 10.7554 13.2448 10.8002 13.3 10.8002H18.2397C18.6442 10.8002 18.8813 11.2555 18.6493 11.5869L11.7097 21.5007C11.4293 21.9012 10.8 21.7029 10.8 21.214V14.5002C10.8 14.445 10.7553 14.4002 10.7 14.4002H5.71089C5.31634 14.4002 5.07723 13.9646 5.28905 13.6318Z" stroke="black" stroke-width="2"/>
+									</svg>
+								</div>
+								<div>
+									<h5 style="margin-top: 10px;">Electrical Safety Hazards <br> <span class="font-italic">电气安全隐患</span></h5>
+									<p>1. Outdated Wiring <span class="font-italic">过时的电线</span></p>
+									<p>2. Overloaded Circuits <span class="font-italic">过载电路</span></p>
+									<p>3. Faulty Installations <span class="font-italic">故障的安装</span></p>
+									<p>4. Data Collection Issues <span class="font-italic">数据收集问题</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a  href="#contactus" style="width: 300px;display: block;margin-left: auto;margin-right: auto;height: 70px;margin-bottom:40px;"><button style="margin-top:20px; height:100%;" class="btn btn-block" >Enroll Now</button></a>
+
+	</section>
 
 	
 	<!--content session-->
 	<section id="service" class="section-description py-5">
 		<div class="container">
 			<h2 class="text-center mb-4">What We Expert?</h2>
-			<p class="text-center" style="margin-bottom:30px;">We offer one-stop solution to help prevent the loss of money, property damage, and worker safety issues caused by building deficiencies. Damage to buildings can lead to significant safety problems, costly repairs, and legal fees.</p>
-			
-			<!-- Product Slider Container -->
-			<div class="slider-container">
-				<button class="slider-btn prev-btn">&lt;</button>
-				<div class="product-slider" id="product-slider">
+			<p class="text-center"style="">We offer one-stop solution to help prevent the loss of money, property damage, and worker safety issues caused by building deficiencies. Damage to buildings can lead to significant safety problems, costly repairs, and legal fees.</p>
+			<p class="text-center" style="margin-top:-10px;margin-bottom:30px;"><span class="font-italic ">我们提供一站式解决方案，帮助防止因建筑缺陷导致的财产损失、损坏和工人安全问题</p>
+
+			<!-- Computer View -->
+			<div class="">
+				<div class="row">
+				
 					<!-- Card 1 -->
-					<div class="product-card">
+					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
 							<img src="descriptionphoto/buildingaccessment.webp" class="card-img-top" alt="Image 1">
 							<div class="card-body">
-								<h6 class="card-title text-center">Building Structure Safety Assessment</h6>
-								<p class="card-text text-center">Ensures structural integrity and safety by examining foundations and load-bearing elements, and providing recommendations.<br><br></p>
+								<h6 class="card-title text-center">Building Structure Safety Assessment </h6>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑结构安全评估</h6>
+								<p class="card-text text-center">Ensures structural integrity and safety by examining foundations and load-bearing elements, and providing recommendations.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
 					</div>
-					
 					<!-- Card 2 -->
-					<div class="product-card">
+					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
 							<img src="descriptionphoto/Building Structure.png" class="card-img-top" alt="Image 2">
 							<div class="card-body">
 								<h6 class="card-title text-center">Building Electrical Safety Assessment</h6>
-								<p class="card-text text-center">Evaluates electrical systems for safety and efficiency, identifying hazards and ensuring compliance with codes and standards.<br><br></p>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑电气安全评估</h6>
+								<p class="card-text text-center">Evaluates electrical systems for safety and efficiency, identifying hazards and ensuring compliance with codes and standards.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
 					</div>
-
 					<!-- Card 3 -->
-					<div class="product-card">
+					<div class="col-lg-4 mb-4">
 						<div class="card border-5 rounded">
 							<img src="descriptionphoto/fireproofing.webp" class="card-img-top" alt="Image 3">
 							<div class="card-body">
 								<h6 class="card-title text-center">Building Fire Safety Assessment</h6>
-								<p class="card-text text-center">Assesses fire protection systems and protocols, ensuring effectiveness, compliance, and safety for all occupants.<br><br></p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Card 4 -->
-					<div class="product-card">
-						<div class="card border-5 rounded">
-							<img src="descriptionphoto/Building_struture_design.png" class="card-img-top" alt="Image 4">
-							<div class="card-body">
-								<h6 class="card-title text-center">Building Structure Design</h6>
-								<p class="card-text text-center">Designs structural frameworks, optimizing stability, safety, and efficiency while adhering to building codes and environmental conditions.<br><br></p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Card 5 -->
-					<div class="product-card">
-						<div class="card border-5 rounded">
-							<img src="descriptionphoto/buildingrestoration.webp" class="card-img-top" alt="Image 5">
-							<div class="card-body">
-								<h6 class="card-title text-center">Building Structure Improvement and Retrofit</h6>
-								<p class="card-text text-center">Enhances structural strength and durability using advanced techniques, ensuring compliance and extending building lifespan.</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Card 6 -->
-					<div class="product-card">
-						<div class="card border-5 rounded">
-							<img src="descriptionphoto/building_thermal_comfort.png" class="card-img-top" alt="Image 6">
-							<div class="card-body">
-								<h6 class="card-title text-center">Building Thermal Comfort Assessment</h6>
-								<p class="card-text text-center">Evaluates indoor climate factors, providing recommendations to enhance comfort, energy efficiency, and occupant satisfaction.<br><br></p>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑消防安全评估</h6>
+								<p class="card-text text-center ">Assesses fire protection systems and protocols, ensuring effectiveness, compliance, and safety for all occupants.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
 							</div>
 						</div>
 					</div>
 				</div>
-				<button class="slider-btn next-btn">&gt;</button>
+				<div class="row">
+				
+					<!-- Card 1 -->
+					<div class="col-lg-4 mb-4">
+						<div class="card border-5 rounded">
+							<img src="descriptionphoto/Building_struture_design.png" class="card-img-top" alt="Image 1">
+							<div class="card-body">
+								<h6 class="card-title text-center ">Building Structure Design</h6>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑结构设计<br><br></h6>
+								<p class="card-text text-center">Designs structural frameworks, optimizing stability, safety, and efficiency while adhering to building codes and environmental conditions.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
+							</div>
+						</div>
+					</div>
+					<!-- Card 2 -->
+					<div class="col-lg-4 mb-4">
+						<div class="card border-5 rounded">
+							<img src="descriptionphoto/buildingrestoration.webp" class="card-img-top" alt="Image 2">
+							<div class="card-body">
+								<h6 class="card-title text-center">Building Structure Improvement and Retrofit</h6>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑结构改进</h6>
+								<p class="card-text text-center">Enhances structural strength and durability using advanced techniques, ensuring compliance and extending building lifespan.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
+							</div>
+						</div>
+					</div>
+					<!-- Card 3 -->
+					<div class="col-lg-4 mb-4">
+						<div class="card border-5 rounded">
+							<img src="descriptionphoto/building_thermal_comfort.png" class="card-img-top" alt="Image 3">
+							<div class="card-body">
+								<h6 class="card-title text-center">Building Thermal Comfort <br>Assessment</h6>
+								<h6 class="card-title text-center font-italic" style="margin-top:-8px;">建筑热舒适性评估</h6>
+								<p class="card-text text-center">Evaluates indoor climate factors, providing recommendations to enhance comfort, energy efficiency, and occupant satisfaction.</p>
+								<!--a href="#" class="btn btn-primary">Read More <i class="fas fa-chevron-right"></i></a-->
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
-
-			<a href="#contactus" style="width: 300px; display: block; margin-left: auto; margin-right: auto; height: 70px; margin-bottom: 40px;">
-				<button style="margin-top: 20px; height: 100%;" class="btn btn-block">Enroll Now</button>
-			</a>
+			<a  href="#contactus" style="width: 300px;display: block;margin-left: auto;margin-right: auto;height: 70px;margin-bottom:40px;"><button style="margin-top:20px; height:100%;" class="btn btn-block" >Enroll Now</button></a>
+			
+		</div>
+	
+	</section>
+	<!--Gallery Section -->
+	<section id="gallery" class="py-5">
+		<div class="container">
+			<h2 class="text-center" style="margin-bottom:40px;">Past Projects</h2>
+			
+			<!-- Custom Tab Navigation -->
+			<ul class="custom-tabs justify-content-center" id="galleryTabs" role="tablist">
+				<!-- JavaScript will populate these tabs dynamically -->
+			</ul>
+			
+			<!-- Tab Content -->
+			<div class="tab-content mt-4" id="galleryTabContent">
+				<!-- JavaScript will populate these tab panes dynamically -->
+				<div class="row" style="width:100%;">
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 1 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 1" id="image1">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 2 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 2" id="image2">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 3 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 3" id="image3">
+					</div>
+				</div>
+				<div class="row" style="width:100%;">
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 4 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 4" id="image4">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 5 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 5" id="image5">
+					</div>
+					<div class="col-md-4 mb-4">
+						<!-- Placeholder for image 6 -->
+						<img src="image_placeholder.jpg" width="100%" alt="Image 6" id="image6">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-
-
-	<style>
-	/* General Styling for Product Slider */
-	.slider-container {
-		position: relative;
-		width: 100%;
-		overflow: hidden;
-	}
-
-	.product-slider {
-		display: flex;
-		gap: 20px;
-		overflow-x: scroll;
-		scroll-snap-type: x mandatory;
-		scroll-behavior: smooth;
-		width: 100%;
-	}
-
-	.product-card {
-		flex: 0 0 auto;
-		width: 100%;
-		scroll-snap-align: start;
-	}
-
-	/* Desktop View: Show 3 cards at a time */
-	@media (min-width: 992px) {
-		.product-card {
-			width: calc((100% / 3) - 20px); /* Adjust for gap */
-		}
-	}
-
-	/* Mobile View: Show 1 card at a time */
-	@media (max-width: 991px) {
-		.product-card {
-			width: 100%;
-		}
-	}
-
-	/* Hide scrollbar for a cleaner look */
-	.product-slider::-webkit-scrollbar {
-		display: none;
-	}
-
-	.product-slider {
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
-	}
-
-	/* Slider Buttons */
-	.slider-btn {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		background-color: rgba(0, 0, 0, 0.5);
-		color: #fff;
-		border: none;
-		padding: 10px;
-		cursor: pointer;
-		z-index: 1;
-	}
-
-	.prev-btn {
-		left: 0;
-	}
-
-	.next-btn {
-		right: 0;
-	}
-
-	.slider-btn:hover {
-		background-color: rgba(0, 0, 0, 0.8);
-	}
-
-
-	</style>
 	<!-- JavaScript for Dynamic Content Loading -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 	<script>
-	const slider = document.getElementById('product-slider');
-	const prevBtn = document.querySelector('.prev-btn');
-	const nextBtn = document.querySelector('.next-btn');
-	let intervalId;
-
-	// Function to scroll slider by one card width
-	function scrollSlider(offset) {
-		slider.scrollLeft += offset;
-	}
-
-	// Auto-slide functionality
-	function autoScroll() {
-		if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-			slider.scrollLeft = 0; // reset to the first card
-		} else {
-			scrollSlider(slider.clientWidth / 3); // scroll by the width of one card in desktop view
-		}
-	}
-
-	// Set the interval for auto-scroll (e.g., 3 seconds)
-	intervalId = setInterval(autoScroll, 3000);
-
-	// Next Button Click Event
-	nextBtn.addEventListener('click', () => {
-		clearInterval(intervalId); // Stop auto-scrolling when manually clicked
-		if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
-			slider.scrollLeft = 0; // reset to the first card
-		} else {
-			scrollSlider(slider.clientWidth / 3);
-		}
-		intervalId = setInterval(autoScroll, 5000); // Restart auto-scrolling
-	});
-
-	// Previous Button Click Event
-	prevBtn.addEventListener('click', () => {
-		clearInterval(intervalId); // Stop auto-scrolling when manually clicked
-		if (slider.scrollLeft === 0) {
-			slider.scrollLeft = slider.scrollWidth; // scroll to the last card
-		} else {
-			scrollSlider(-(slider.clientWidth / 3));
-		}
-		intervalId = setInterval(autoScroll, 5000); // Restart auto-scrolling
-	});
-
 		// Function to fetch gallery data
 		function fetchGalleryData() {
 			return fetch('gallery_data.json') // Replace with your actual JSON endpoint
@@ -716,7 +816,8 @@
 	<section id="contactus" class="hero-banner py-5" style="height:400px">
 		<div class="hero-content">
 			<h2>Contact Us</h2>
-			<p >Contact us today to secure expert building solutions tailored to your needs and ensure lasting safety and integrity.</p>
+			<p>Contact us today to secure expert building solutions tailored to your needs and ensure lasting safety and integrity.</p>
+			<p class="font-italic" style="margin-top:-20px">立即联系我们，获取量身定制的专业建筑解决方案，确保持久的安全性和结构完整性。</p>
 			<!--a href="#" class="btn btn-primary">Learn More</a-->
 		</div>
 	</section>
@@ -732,15 +833,15 @@
 				<div class="col-md-6 offset-md-3">
 					<form action="submit.php" method="POST">
 						<div class="form-group">
-							<label for="name">Name:</label>
+							<label for="name">Name <span class="font-italic">姓名</span> :</label>
 							<input name="name" type="text" class="form-control" id="name" placeholder="Enter your name" required>
 						</div>
 						<div class="form-group">
-							<label for="email">Email:</label>
+							<label for="email">Email <span class="font-italic">电邮地址</span> :</label>
 							<input name="email" type="email" class="form-control" id="email" placeholder="Enter your email" required>
 						</div>
 						<div class="form-group">
-							<label for="phone">Phone:</label>
+							<label for="phone">Phone <span class="font-italic">电话号码</span> :</label>
 							<input name="phone" type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
 						</div>
 
@@ -812,6 +913,7 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	
 </body>
 </html>
