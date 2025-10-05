@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        C&CT Consult - Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories | C&CT Consult - 建筑安全检查公司：确保工厂的结构、电气和消防安全
+    </title>
+    <meta name="description" content="C&CT Consult provides structural integrity, fire safety, and electrical system inspection services for garment factories, ensuring safety compliance, extending building lifespan, and improving operational efficiency. 
+    C&CT Consult 为服装工厂提供结构完整性、消防安全和电气系统检查服务，确保安全合规，延长建筑使用寿命，提高运营效率。">
+    <meta name="keywords" content="building safety, fire inspection, electrical safety, structural assessment, factory safety, CCTC; 建筑安全，消防检查，电气安全，结构评估，工厂安全，CCTC">
+    <meta name="author" content="C&CT Consult">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="C&CT Consult - Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories | C&CT Consult - 建筑安全检查公司：确保工厂的结构、电气和消防安全">
+    <meta property="og:description" content="We are dedicated to providing comprehensive building safety assessment services for garment factories, ensuring the safety of workers and property. 
+    我们致力于为服装工厂提供全面的建筑安全评估服务，确保工人和财产的安全。">
+    <meta property="og:image" content="C&CTconsultcover.png">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="C&CT Consult Building Safety Inspection Company | C&CT Consult 建筑安全检查公司">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="C&CT Consult Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories | C&CT Consult - 建筑安全检查公司：确保工厂的结构、电气和消防安全">
+    <meta name="twitter:description" content="C&CT Consult provides structural, fire, and electrical safety inspections for garment factories. 
+    C&CT Consult 为服装工厂提供结构、消防和电气安全检查。">
+    <meta name="twitter:image" content="C&CTconsultcover.png">
+    <meta name="twitter:site" content="@C&CTConsult">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Custom Style -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Navbar with only logo */
+        .navbar {
+            background-color: #000; 
+        }
+        .navbar-brand img {
+            width: 100px;
+        }
+
+        /* Full background image */
+        .full-image {
+            height: 100vh;
+            background: url('struct1.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation with Logo Only -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.webp" alt="cctc">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Image -->
+    <div class="full-image"></div>
+
+    <!-- Optional Tracking Script -->
+    <script>
+        function trackEvent(eventType, timeValue) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "track.php?event=" + eventType + "&t=" + timeValue, true);
+            xhttp.send();
+        }
+        window.addEventListener('load', function() {
+            trackEvent('view', 0);
+        });
+        setTimeout(function() {
+            trackEvent('30sec', 30);
+        }, 30000);
+        setTimeout(function() {
+            trackEvent('60sec', 60);
+        }, 60000);
+    </script>
+</body>
+</html>
