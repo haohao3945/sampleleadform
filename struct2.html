@@ -14,7 +14,7 @@
     <meta name="googlebot" content="index, follow">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="C&CT Consult - Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories | C&CT Consult - 建筑安全检查公司：确保工厂的结构、电气和消防安全">
+    <meta property="og:title" content="C&CT Consult - Building Safety Inspection Company: Ensuring Structural, Electrical, and Fire Safety for Factories | C&CT Consult - 建筑安全检查公司">
     <meta property="og:description" content="We are dedicated to providing comprehensive building safety assessment services for garment factories, ensuring the safety of workers and property. 
     我们致力于为服装工厂提供全面的建筑安全评估服务，确保工人和财产的安全。">
     <meta property="og:image" content="C&CTconsultcover.png">
@@ -44,34 +44,48 @@
             height: 100%;
         }
 
-        /* Navbar with only logo */
-        .navbar {
-            background-color: #000; 
-        }
-        .navbar-brand img {
-            width: 100px;
+        #content-image {
+            width: 100%;
+            margin: auto;
         }
 
-        /* Full background image */
-        .full-image {
-            height: 100vh;
-            background: url('struct2.jpg') no-repeat center center;
-            background-size: cover;
+        /* WhatsApp floating button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+        .whatsapp-float:hover {
+            background-color: #20b955;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation with Logo Only -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.webp" alt="cctc">
-            </a>
-        </div>
-    </nav>
-
+  
     <!-- Fullscreen Image -->
-    <div class="full-image"></div>
+    <div>
+        <img id="content-image" src="struct2.jpg" alt="Website error, please contact alantangctc@yahoo.com">
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wasap.my/85512911603" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp">
+    </a>
 
     <!-- Optional Tracking Script -->
     <script>
@@ -92,3 +106,4 @@
     </script>
 </body>
 </html>
+
